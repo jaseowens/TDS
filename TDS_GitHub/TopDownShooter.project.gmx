@@ -40,6 +40,7 @@
       <sprite>sprites\sMissile</sprite>
       <sprite>sprites\sShell</sprite>
       <sprite>sprites\sArrow</sprite>
+      <sprite>sprites\sShotgunBullet</sprite>
     </sprites>
     <sprites name="Weapons">
       <sprite>sprites\sAllWeapons</sprite>
