@@ -125,22 +125,14 @@ if(canFireCount &lt; getWeaponFireSpeed(curWeapon)){
 }
 if(mouse_check_button(mb_left)){
     if(canFireCount = getWeaponFireSpeed(curWeapon)){
-        if(curWeapon = 4){
-            instance_create(oWeapon.x,oWeapon.y,oAcidBullet);
-            canFireCount = 0;
-        } else if(curWeapon = 5){
-            instance_create(oWeapon.x,oWeapon.y,oRocketBullet);
-            canFireCount = 0;
-        } else{
-            instance_create(oWeapon.x,oWeapon.y,oBullet);
-            if(curWeapon = 2){
-                instance_create(x,y,oBullet);
-                instance_create(x,y,oBullet);
-                instance_create(x,y,oBullet);
-                instance_create(x,y,oBullet);
-            }
-            canFireCount = 0;
+        instance_create(oWeapon.x,oWeapon.y,getWeaponAmmo(curWeapon));
+        if(curWeapon = 2){
+            instance_create(x,y,oShotgunBullet);
+            instance_create(x,y,oShotgunBullet);
+            instance_create(x,y,oShotgunBullet);
+            instance_create(x,y,oShotgunBullet);
         }
+        canFireCount = 0;
     }   
 }
 

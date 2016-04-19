@@ -1,26 +1,26 @@
 ///getWeaponAmmo(WeaponName);
 //Ammo each weapon uses, not implemented currently
+//Attempting to use this to create object associated with current weapon
 weaponType = argument0;
-
 
 switch(weaponType){
     case 0:
-        return 0;
+        return oBullet;
         break;
     case 1:
-        return 0;
+        return oBullet;
         break;
     case 2:
-        return 1;
+        return oShotgunBullet;
         break;
     case 3:
-        return 2;
+        return oArrow;
         break;
     case 4:
-        return 3;
+        return oAcidBullet;
         break;
     case 5:
-        return 4;
+        return oRocketBullet;
         break;
     default:
         return 0;

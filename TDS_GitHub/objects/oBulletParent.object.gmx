@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>//Sprite
 image_speed = 0;
-image_index = getWeaponAmmo(oPlayer.curWeapon);
 
 //Move 
 image_angle = point_direction(x,y,mouse_x,mouse_y);
@@ -167,11 +166,7 @@ screenShake();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_index != 2){
-    instance_destroy();
-} else{
-    speed = 0;
-}
+            <string>instance_destroy();
 screenShake();
 
 </string>
