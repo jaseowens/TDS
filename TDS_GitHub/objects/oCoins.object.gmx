@@ -39,6 +39,8 @@ speed = 5;
 
 motion_set(dir,speed);
 
+life = 0;
+
 </string>
           </argument>
         </arguments>
@@ -67,6 +69,15 @@ if(distance_to_object(oPlayer) &lt; 100){
 }
 if(speed &gt;= 0.1){
     speed -= 0.25;
+}
+
+life++;
+
+if(life = 1000){
+    instance_destroy();
+}
+if(life &gt;= 500){
+    image_alpha -= 0.002;
 }
 
 

@@ -112,8 +112,6 @@
     <instance objName="oWallInvis" x="2688" y="2688" name="inst_6AE7AE86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oZombie" x="2432" y="2624" name="inst_114DC516" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oHealthPack" x="2336" y="2592" name="inst_81682B56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oCoins" x="2336" y="2368" name="inst_CEEDFF84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oCoins" x="2400" y="2272" name="inst_F2E4FD1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallInvis" x="2176" y="2496" name="inst_0A3E844D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallInvis" x="2176" y="2560" name="inst_6965E5BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallInvis" x="2176" y="2624" name="inst_C154A6BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -143,6 +141,7 @@
     <instance objName="oWallInvis" x="2752" y="2624" name="inst_B52D1226" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallInvis" x="2816" y="2752" name="inst_4E2BEF21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallInvis" x="2432" y="2496" name="inst_12E4DE07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oZombieSpawner" x="2048" y="2048" name="inst_0B5762F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bTiles" x="2240" y="2560" w="64" h="64" xo="518" yo="740" id="10000510" name="inst_B499F120" depth="11" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
