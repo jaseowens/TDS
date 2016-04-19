@@ -21,6 +21,9 @@ switch(weaponType){
     case 5:
         return 75;
         break;
+    case 6:
+        return 3;
+        break;
     default:
         return 0;
         break;

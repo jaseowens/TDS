@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>life = 0;
+redBlendColor = 255;
+
+
 </string>
           </argument>
         </arguments>
@@ -48,7 +51,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 0.2;
+            <string>if(speed &gt;=0.2){
+    speed -= 0.2;
+}
+redBlendColor -= 1;
 alarm[0] = 1;
 </string>
           </argument>
@@ -82,6 +88,8 @@ if(life &gt;= 145){
 if(life &lt;= 15){
     image_angle += 5;
 }
+image_blend = c_red;
+
 </string>
           </argument>
         </arguments>

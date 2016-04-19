@@ -21,5 +21,8 @@ switch(weapon){
     case 5:
         return "Rocket Launcher";
         break;
+    case 6:
+        return "Gatling Gun";
+        break;
 
 }

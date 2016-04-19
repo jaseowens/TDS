@@ -44,6 +44,8 @@ startX = x;
 startY = y;
 trailAlpha = 1;
 
+oPlayer.acidBullets -= 1;
+
 
 </string>
           </argument>

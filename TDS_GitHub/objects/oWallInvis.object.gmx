@@ -3,7 +3,7 @@
   <spriteName>sInvis</spriteName>
   <solid>-1</solid>
   <visible>0</visible>
-  <depth>10</depth>
+  <depth>9</depth>
   <persistent>0</persistent>
   <parentName>oEnvironmentCollidable</parentName>
   <maskName>&lt;undefined&gt;</maskName>

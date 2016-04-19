@@ -32,6 +32,13 @@ image_speed = 0.17;
 image_xscale = 0.25;
 image_yscale = 0.25;
 
+randomize();
+
+dir = irandom_range(0,360);
+speed = 5;
+
+motion_set(dir,speed);
+
 </string>
           </argument>
         </arguments>
@@ -58,6 +65,10 @@ image_yscale = 0.25;
 if(distance_to_object(oPlayer) &lt; 100){
     move_towards_point(oPlayer.x,oPlayer.y,10);
 }
+if(speed &gt;= 0.1){
+    speed -= 0.25;
+}
+
 
 </string>
           </argument>
@@ -83,7 +94,7 @@ if(distance_to_object(oPlayer) &lt; 100){
             <kind>1</kind>
             <string>with(other){
     randomize();
-    money += random_range(1,5);
+    money += 1;
 }
 
 instance_destroy();

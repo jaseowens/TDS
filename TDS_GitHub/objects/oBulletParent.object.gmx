@@ -36,7 +36,7 @@ bulletSpread = random_range(-getWeaponSpread(oPlayer.curWeapon),getWeaponSpread(
 
 //Bullet Movement
 //ONLY AFFECTS X-AXIS WITH BULLET SPREAD, NOT GOOD FOR SPREADS WHEN LOOKING RIGHT/LEFT
-move_towards_point(mouse_x+bulletSpread,mouse_y,getWeaponBulletSpeed(oPlayer.curWeapon));
+move_towards_point(mouse_x+bulletSpread,mouse_y+bulletSpread,getWeaponBulletSpeed(oPlayer.curWeapon));
 
 startX = x;
 startY = y;
@@ -91,7 +91,7 @@ screenShake();
 bInst = instance_create(oWeapon.x,oWeapon.y,oShell);
 bInst.direction = image_angle - (random_range(30,60));
 bInst.speed = irandom_range(5,15);
-bInst.alarm[0] = 5;
+bInst.alarm[0] = 3;
 </string>
           </argument>
         </arguments>
@@ -171,6 +171,29 @@ screenShake();
             <string>instance_destroy();
 screenShake();
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy();
 </string>
           </argument>
         </arguments>

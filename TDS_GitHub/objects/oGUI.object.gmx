@@ -32,10 +32,18 @@ draw_text_colour(0,80,"Money: " + string(oPlayer.money),c_white,c_white,c_white,
 draw_text_colour(0,110,"Fire: " + string(oPlayer.canFireCount) + "/" + string(getWeaponFireSpeed(oPlayer.curWeapon)),c_white,c_white,c_white,c_white,1);
 
 
+
 draw_sprite(sHealthbarBG,0,31,19);
 draw_sprite_ext(sHealthbarInner,0,31,19,oPlayer.hp/100,1,0,c_white,1);
 draw_sprite(sHealthbarBorder,0,0,0);
 
+
+draw_set_font(fSmall);
+draw_text_colour(0,142,"Bullets: " + string(oPlayer.bullets) + "/255",c_white,c_white,c_white,c_white,1);
+draw_text_colour(0,154,"Shotgun Shells: " + string(oPlayer.shotgunBullets) + "/255",c_white,c_white,c_white,c_white,1);
+draw_text_colour(0,166,"Bolts: " + string(oPlayer.bolts) + "/255",c_white,c_white,c_white,c_white,1);
+draw_text_colour(0,178,"Acid Ammo: " + string(oPlayer.acidBullets) + "/255",c_white,c_white,c_white,c_white,1);
+draw_text_colour(0,190,"Explosives: " + string(oPlayer.acidBullets) + "/255",c_white,c_white,c_white,c_white,1);
 
 
 </string>

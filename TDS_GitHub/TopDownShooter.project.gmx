@@ -63,6 +63,7 @@
       <script>scripts\getWeaponDamage.gml</script>
       <script>scripts\getWeaponFireSpeed.gml</script>
       <script>scripts\getWeaponAmmo.gml</script>
+      <script>scripts\getWeaponAmmoType.gml</script>
       <script>scripts\getWeaponBulletSpeed.gml</script>
       <script>scripts\weaponString.gml</script>
     </scripts>
@@ -103,6 +104,7 @@
       <object>objects\oRedZombie</object>
       <object>objects\oGreenZombie</object>
       <object>objects\oDamage</object>
+      <object>objects\oZombieParent</object>
     </objects>
     <objects name="Weapons">
       <object>objects\oWeapon</object>

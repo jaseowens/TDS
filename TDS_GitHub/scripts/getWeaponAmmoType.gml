@@ -5,25 +5,25 @@ weaponType = argument0;
 
 switch(weaponType){
     case 0:
-        return oBullet;
+        return bullets;
         break;
     case 1:
-        return oBullet;
+        return bullets;
         break;
     case 2:
-        return oShotgunBullet;
+        return shotgunBullets;
         break;
     case 3:
-        return oArrow;
+        return bolts;
         break;
     case 4:
-        return oAcidBullet;
+        return acidBullets;
         break;
     case 5:
-        return oRocketBullet;
+        return explosives;
         break;
     case 6:
-        return oBullet;
+        return bullets;
         break;
     default:
         return 0;
