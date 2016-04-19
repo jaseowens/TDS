@@ -1,22 +1,25 @@
 ///getWeaponFireSpeed(WeaponName);
-
+//Time inbetween each shot
 weaponType = argument0;
 
 switch(weaponType){
-    case "Pistol":
+    case 0:
         return 20;
         break;
-    case "Machine Gun":
+    case 1:
         return 10;
         break;
-    case "Shotgun":
+    case 2:
         return 75;
         break;
-    case "Bow":
+    case 3:
         return 85;
         break;
-    case "Acid Gun":
+    case 4:
         return 35;
+        break;
+    case 5:
+        return 75;
         break;
     default:
         return 0;

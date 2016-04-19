@@ -1,21 +1,24 @@
 ///getWeaponBulletSpeed(WeaponName);
-
+//Speed of each bullet
 weaponType = argument0;
 
 switch(weaponType){
-    case "Pistol":
+    case 0:
         return 15;
         break;
-    case "Machine Gun":
+    case 1:
         return 15;
         break;
-    case "Shotgun":
+    case 2:
         return 10;
         break;
-    case "Bow":
+    case 3:
         return 20;
         break;
-    case "Acid Gun":
+    case 4:
+        return 5;
+        break;
+    case 5:
         return 5;
         break;
     default:

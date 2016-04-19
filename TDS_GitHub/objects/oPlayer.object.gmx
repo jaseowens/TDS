@@ -26,9 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>///Init Vars
-
-
-
 //Store
 money = 0;
 
@@ -45,7 +42,7 @@ canFireCount = 0;
 instance_create(x,y,oWeapon);
 
 //Weapons:
-curWeapon = "Pistol";
+curWeapon = 0;
 
 //Create Camera:
 instance_create(x,y,oCamera);
@@ -128,6 +125,32 @@ if(canFireCount &lt; getWeaponFireSpeed(curWeapon)){
 }
 if(mouse_check_button(mb_left)){
     if(canFireCount = getWeaponFireSpeed(curWeapon)){
+        if(curWeapon = 4){
+            instance_create(oWeapon.x,oWeapon.y,oAcidBullet);
+            canFireCount = 0;
+        } else if(curWeapon = 5){
+            instance_create(oWeapon.x,oWeapon.y,oRocketBullet);
+            canFireCount = 0;
+        } else{
+            instance_create(oWeapon.x,oWeapon.y,oBullet);
+            if(curWeapon = 2){
+                instance_create(x,y,oBullet);
+                instance_create(x,y,oBullet);
+                instance_create(x,y,oBullet);
+                instance_create(x,y,oBullet);
+            }
+            canFireCount = 0;
+        }
+    }   
+}
+
+/**
+//Fire Bullet [OLD]
+if(canFireCount &lt; getWeaponFireSpeed(curWeapon)){
+    canFireCount++;
+}
+if(mouse_check_button(mb_left)){
+    if(canFireCount = getWeaponFireSpeed(curWeapon)){
         if(curWeapon = "Acid Gun"){
             instance_create(oWeapon.x,oWeapon.y,oAcidBullet);
             canFireCount = 0;
@@ -143,7 +166,7 @@ if(mouse_check_button(mb_left)){
         }
     }
 }
-
+**/
 //Death
 if(hp &lt;= 0){
     //Player Dies  
@@ -154,27 +177,24 @@ if(keyboard_check_released(vk_escape)){
     instance_create(x,y,oPause);
     canPause = 0;
 }
-
 //FOR TESTING
-if(keyboard_check_released(ord('1'))){
+if(mouse_wheel_down()){
+    //ESSENTIAL FOR SWAPPING, MAJOR BUGS IF DONT DO BELOW
     canFireCount = 0;
-    curWeapon = "Pistol";
+    if(curWeapon &gt;= 1){
+        curWeapon -= 1;
+    } else{
+        curWeapon = 5;
+    }
 }
-if(keyboard_check_released(ord('2'))){
+if(mouse_wheel_up()){
+    //ESSENTIAL FOR SWAPPING, MAJOR BUGS IF DONT DO BELOW
     canFireCount = 0;
-    curWeapon = "Machine Gun";
-}
-if(keyboard_check_released(ord('3'))){
-    canFireCount = 0;
-    curWeapon = "Shotgun";
-}
-if(keyboard_check_released(ord('4'))){
-    canFireCount = 0;
-    curWeapon = "Bow";
-}
-if(keyboard_check_released(ord('5'))){
-    canFireCount = 0;
-    curWeapon = "Acid Gun";
+    if(curWeapon &lt;= 4){
+        curWeapon += 1;
+    } else{
+        curWeapon = 0;
+    }
 }
 </string>
           </argument>

@@ -1,26 +1,26 @@
-///getWeaponFireSpeed(WeaponName);
-
+///getWeaponAmmo(WeaponName);
+//Ammo each weapon uses, not implemented currently
 weaponType = argument0;
 
-//Bullets = 0;
-//Shells = 1;
-//Arrows = 2;
 
 switch(weaponType){
-    case "Pistol":
+    case 0:
         return 0;
         break;
-    case "Machine Gun":
+    case 1:
         return 0;
         break;
-    case "Shotgun":
+    case 2:
         return 1;
         break;
-    case "Bow":
+    case 3:
         return 2;
         break;
-    case "Acid Gun":
+    case 4:
         return 3;
+        break;
+    case 5:
+        return 4;
         break;
     default:
         return 0;

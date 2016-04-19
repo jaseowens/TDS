@@ -1,21 +1,24 @@
 ///getWeaponSpread(WeaponName);
-
+//Accuracy of bullets target [+/-] from mouse pointer
 weaponType = argument0;
 
 switch(weaponType){
-    case "Pistol":
+    case 0:
         return 10;
         break;
-    case "Machine Gun":
+    case 1:
         return 20;
         break;
-    case "Shotgun":
+    case 2:
         return 100;
         break;
-    case "Bow":
+    case 3:
         return 5;
         break;
-    case "Acid Gun":
+    case 4:
+        return 10;
+        break;
+    case 5:
         return 10;
         break;
     default:

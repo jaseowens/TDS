@@ -26,10 +26,6 @@
       <sprite>sprites\sHealthPack</sprite>
       <sprite>sprites\sCoins</sprite>
     </sprites>
-    <sprites name="Bullets">
-      <sprite>sprites\sBullet</sprite>
-      <sprite>sprites\sAcidBullet</sprite>
-    </sprites>
     <sprites name="Game">
       <sprite>sprites\sMouse</sprite>
     </sprites>
@@ -38,8 +34,16 @@
       <sprite>sprites\sGreenZombie</sprite>
       <sprite>sprites\sRedZombie</sprite>
     </sprites>
+    <sprites name="Bullets">
+      <sprite>sprites\sBullet</sprite>
+      <sprite>sprites\sAcidBullet</sprite>
+      <sprite>sprites\sMissile</sprite>
+    </sprites>
     <sprites name="Weapons">
       <sprite>sprites\sAllWeapons</sprite>
+    </sprites>
+    <sprites name="Explosions">
+      <sprite>sprites\sExplosionOne</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -57,7 +61,7 @@
       <script>scripts\getWeaponFireSpeed.gml</script>
       <script>scripts\getWeaponAmmo.gml</script>
       <script>scripts\getWeaponBulletSpeed.gml</script>
-      <script>scripts\script7.gml</script>
+      <script>scripts\weaponString.gml</script>
     </scripts>
     <script>scripts\screenShake.gml</script>
   </scripts>
@@ -98,9 +102,13 @@
       <object>objects\oWeapon</object>
     </objects>
     <objects name="Bullets">
-      <object>objects\oAcidBullet</object>
-      <object>objects\oBullet</object>
       <object>objects\oBulletParent</object>
+      <object>objects\oBullet</object>
+      <object>objects\oAcidBullet</object>
+      <object>objects\oRocketBullet</object>
+    </objects>
+    <objects name="Explosions">
+      <object>objects\oExplosion</object>
     </objects>
   </objects>
   <rooms name="rooms">
