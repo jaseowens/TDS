@@ -42,6 +42,10 @@ move_towards_point(mouse_x+bulletSpread,mouse_y,getWeaponBulletSpeed(oPlayer.cur
 startX = x;
 startY = y;
 trailAlpha = 1;
+
+
+
+
 </string>
           </argument>
         </arguments>
@@ -64,6 +68,31 @@ trailAlpha = 1;
             <kind>1</kind>
             <string>///Shake Effect
 screenShake();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Create Bullet Shell
+bInst = instance_create(oWeapon.x,oWeapon.y,oShell);
+bInst.direction = image_angle - (random_range(30,60));
+bInst.speed = irandom_range(5,15);
+bInst.alarm[0] = 5;
 </string>
           </argument>
         </arguments>

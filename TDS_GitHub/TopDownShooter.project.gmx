@@ -38,6 +38,7 @@
       <sprite>sprites\sBullet</sprite>
       <sprite>sprites\sAcidBullet</sprite>
       <sprite>sprites\sMissile</sprite>
+      <sprite>sprites\sShell</sprite>
     </sprites>
     <sprites name="Weapons">
       <sprite>sprites\sAllWeapons</sprite>
@@ -106,6 +107,7 @@
       <object>objects\oBullet</object>
       <object>objects\oAcidBullet</object>
       <object>objects\oRocketBullet</object>
+      <object>objects\oShell</object>
     </objects>
     <objects name="Explosions">
       <object>objects\oExplosion</object>
