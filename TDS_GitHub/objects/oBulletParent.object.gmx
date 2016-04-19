@@ -142,6 +142,8 @@ bInst.alarm[0] = 5;
             <string>instance_destroy();
 with(other){
     hp -= getWeaponDamage(oPlayer.curWeapon);
+    text = instance_create(x,y-sprite_height,oDamage);
+    text.str = getWeaponDamage(oPlayer.curWeapon);
 }
 screenShake();
 </string>

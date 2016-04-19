@@ -135,30 +135,6 @@ if(mouse_check_button(mb_left)){
         canFireCount = 0;
     }   
 }
-
-/**
-//Fire Bullet [OLD]
-if(canFireCount &lt; getWeaponFireSpeed(curWeapon)){
-    canFireCount++;
-}
-if(mouse_check_button(mb_left)){
-    if(canFireCount = getWeaponFireSpeed(curWeapon)){
-        if(curWeapon = "Acid Gun"){
-            instance_create(oWeapon.x,oWeapon.y,oAcidBullet);
-            canFireCount = 0;
-        } else{
-            instance_create(oWeapon.x,oWeapon.y,oBullet);
-            if(curWeapon = "Shotgun"){
-                instance_create(x,y,oBullet);
-                instance_create(x,y,oBullet);
-                instance_create(x,y,oBullet);
-                instance_create(x,y,oBullet);
-            }
-            canFireCount = 0;
-        }
-    }
-}
-**/
 //Death
 if(hp &lt;= 0){
     //Player Dies  

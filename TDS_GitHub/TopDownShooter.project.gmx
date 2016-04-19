@@ -70,6 +70,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fInGame</font>
+    <font>fonts\fSmall</font>
   </fonts>
   <objects name="objects">
     <objects name="Environment">
@@ -84,6 +85,7 @@
     <objects name="Game">
       <object>objects\oCamera</object>
       <object>objects\oPause</object>
+      <object>objects\oZombieSpawner</object>
       <object>objects\oMouse</object>
     </objects>
     <objects name="Player">
@@ -100,6 +102,7 @@
       <object>objects\oZombie</object>
       <object>objects\oRedZombie</object>
       <object>objects\oGreenZombie</object>
+      <object>objects\oDamage</object>
     </objects>
     <objects name="Weapons">
       <object>objects\oWeapon</object>
