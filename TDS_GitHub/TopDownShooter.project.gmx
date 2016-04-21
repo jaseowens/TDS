@@ -10,6 +10,9 @@
       <sprite>sprites\sHealthbarInner</sprite>
       <sprite>sprites\sHealthbarBorder</sprite>
       <sprite>sprites\sHealthbarBG</sprite>
+      <sprites name="Radial Menu">
+        <sprite>sprites\sMachineGun</sprite>
+      </sprites>
     </sprites>
     <sprites name="Environment">
       <sprite>sprites\sGlass</sprite>
@@ -67,6 +70,10 @@
       <script>scripts\getWeaponBulletSpeed.gml</script>
       <script>scripts\weaponString.gml</script>
     </scripts>
+    <scripts name="Menu">
+      <script>scripts\showMenu.gml</script>
+      <script>scripts\hideMenu.gml</script>
+    </scripts>
     <script>scripts\screenShake.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -94,6 +101,9 @@
     </objects>
     <objects name="GUI">
       <object>objects\oGUI</object>
+      <objects name="RadialMenu">
+        <object>objects\oShotgunDial</object>
+      </objects>
     </objects>
     <objects name="Items">
       <object>objects\oHealthPack</object>
