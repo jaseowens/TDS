@@ -73,6 +73,7 @@
     <scripts name="Menu">
       <script>scripts\showMenu.gml</script>
       <script>scripts\hideMenu.gml</script>
+      <script>scripts\createRadial.gml</script>
     </scripts>
     <script>scripts\screenShake.gml</script>
   </scripts>

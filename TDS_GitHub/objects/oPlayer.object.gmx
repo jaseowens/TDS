@@ -260,6 +260,7 @@ if(mouse_check_button_released(mb_right)){
 
 
 
+
 </string>
           </argument>
         </arguments>
@@ -284,17 +285,17 @@ if(mouse_check_button_released(mb_right)){
             <kind>1</kind>
             <string>///Radial Menu
 
-if(display = true){
+if(oPlayer.display = true){
     show_debug_message('displaying');
     showMenu();
 }
-if(display = false){
+if(oPlayer.display = false){
     show_debug_message('Not displaying');
     hideMenu();
 }
 
-draw_self();
 
+draw_self();
 </string>
           </argument>
         </arguments>
