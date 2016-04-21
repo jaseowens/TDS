@@ -36,7 +36,7 @@ bulletSpread = random_range(-getWeaponSpread(oPlayer.curWeapon),getWeaponSpread(
 
 //Bullet Movement
 //ONLY AFFECTS X-AXIS WITH BULLET SPREAD, NOT GOOD FOR SPREADS WHEN LOOKING RIGHT/LEFT
-move_towards_point(mouse_x+bulletSpread,mouse_y+bulletSpread,getWeaponBulletSpeed(oPlayer.curWeapon));
+move_towards_point(mouse_x+bulletSpread,mouse_y+bulletSpread,getWeaponBulletSpeed(oPlayer.curWeapon)*global.time);
 
 startX = x;
 startY = y;
@@ -114,7 +114,7 @@ bInst.alarm[0] = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>trailAlpha -= 0.02;
+            <string>trailAlpha -= 0.02*global.time;
 
 
 </string>

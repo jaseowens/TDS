@@ -28,7 +28,8 @@
                 break;
         }
     }
-}</code>
+}
+global.time = 1;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

@@ -135,15 +135,15 @@ xDir = keyboard_check(ord('D')) - keyboard_check(ord('A'));
 yDir =  keyboard_check(ord('S')) - keyboard_check(ord('W'));
 
 if(keyboard_check(ord('D')) &amp;&amp; keyboard_check(ord('W')) || keyboard_check(ord('D')) &amp;&amp; keyboard_check(ord('S'))){
-    spdMul = 3;
+    spdMul = 3*global.time;
 } else if(keyboard_check(ord('A')) &amp;&amp; keyboard_check(ord('W')) || keyboard_check(ord('A')) &amp;&amp; keyboard_check(ord('S'))){
-    spdMul = 3;
+    spdMul = 3*global.time;
 } else{
-    spdMul = 4;
+    spdMul = 4*global.time;
 }
 
-hspeed = xDir*spdMul;
-vspeed = yDir*spdMul;
+hspeed = (xDir*spdMul)*global.time;
+vspeed = (yDir*spdMul)*global.time;
 
 //Collisions:
 if(hspeed !=0){
@@ -245,11 +245,11 @@ if(mouse_wheel_up()){
 if(mouse_check_button_released(mb_right)){
     if(display = false){
         //Show menu
-        
+        global.time=0.1;
         display = true;
     } else{
         //Hide menu
-        
+        global.time=1;
         display = false;
     }
 }

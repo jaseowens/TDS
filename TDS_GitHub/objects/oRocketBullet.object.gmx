@@ -51,7 +51,7 @@ oPlayer.explosives -= 1;
             <kind>1</kind>
             <string>event_inherited();
 if(speed &lt; 40){
-    speed += 0.75;
+    speed += 0.75*global.time;
 }
 </string>
           </argument>
