@@ -6,13 +6,14 @@ var radialsToCreate = 360/numberOfItems;
 var updatedRadialPoint = radialsToCreate;
 global.cirlces[] = 6;
 
+c = make_colour_rgb(70,70,70);
+
 for(i = 0; i < numberOfItems; i++){
     xx = x + lengthdir_x(150,radialsToCreate*i);
     yy = y + lengthdir_y(150,radialsToCreate*i);
     draw_line_colour(x,y,xx,yy,c_purple,c_purple);
-    if(!place_meeting(xx,yy,oShotgunDial)){
-        instance_create(xx,yy,oShotgunDial);
-    }
+    draw_circle_colour(xx,yy,50,c,c,false);
+    
 }
 //OLD HARDCODED METHOD
 /**
